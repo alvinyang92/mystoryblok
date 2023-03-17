@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxi dev --https --ssl-key key.pem --ssl-cert cert.pem",
+    "dev-ssl": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "stackblitz": "npm run dev"
+  },
+  "stackblitz": {
+    "startCommand": "npm run stackblitz"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "@storyblok/nuxt": "^5.1.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "nuxt": "^3.2.2"
+  }
+}
