@@ -14,8 +14,9 @@
           {{ blok.subheadline }}
         </h2>
       </div>
-      <img
-        :src="blok.background_image.filename"
+      <nuxt-img
+    
+        :src="blok.background_image.filename + '/m/'"
         :alt="blok.background_image.alt"
         class="absolute top-0 left-0 z-0 w-full h-full object-cover"
       />

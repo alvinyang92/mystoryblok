@@ -13,7 +13,7 @@
         <StoryblokComponent v-for="category in blok.categories" :blok="category.content" />
       </div>
     </div> -->
-      <div v-if="categories">
+      <div v-if="categories" class="flex space-x-6 items-center w-full">
         <StoryblokComponent v-for="category in categories" :blok="category.content" />
       </div>
 
