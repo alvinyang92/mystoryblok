@@ -1644,7 +1644,7 @@
   "resolved" "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   "version" "0.0.1"
 
-"consola@^2.15.3":
+"consola@^2.14.0", "consola@^2.15.3":
   "integrity" "sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw=="
   "resolved" "https://registry.npmjs.org/consola/-/consola-2.15.3.tgz"
   "version" "2.15.3"
@@ -3400,6 +3400,11 @@
     "pkg-types" "^1.0.1"
     "ufo" "^1.1.0"
 
+"moment@^2.27.0", "moment@^2.29.4":
+  "integrity" "sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w=="
+  "resolved" "https://registry.npmjs.org/moment/-/moment-2.29.4.tgz"
+  "version" "2.29.4"
+
 "mri@^1.2.0":
   "integrity" "sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA=="
   "resolved" "https://registry.npmjs.org/mri/-/mri-1.2.0.tgz"
@@ -3602,6 +3607,14 @@
   "version" "3.2.2"
   optionalDependencies:
     "fsevents" "~2.3.2"
+
+"nuxt-moment@^1.0.5":
+  "integrity" "sha512-rNnvDYt8tGnjbx7LFJ4G46J5qfwh4j6oJiX+IEbXu3qi31MxoCLxcNB28LdunvojJoU6n7xW6CbWxMR8UPzg1g=="
+  "resolved" "https://registry.npmjs.org/nuxt-moment/-/nuxt-moment-1.0.5.tgz"
+  "version" "1.0.5"
+  dependencies:
+    "consola" "^2.14.0"
+    "moment" "^2.27.0"
 
 "nuxt@^3.2.2":
   "integrity" "sha512-fxO8zjNwWBd6ORvuOgVFXksd0+eliWSNQwACsCwqNRFXsjFawONfvqtdTd/pBOlRDZMJpPUTvdflsyHPaAsfJg=="

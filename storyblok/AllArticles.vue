@@ -7,6 +7,7 @@
           :key="article.uuid"
           :article="article.content"
           :slug="article.full_slug"
+       
         />
       </div>
     </div>
@@ -21,6 +22,8 @@
     version: 'draft',
     starts_with: 'blog',
     is_startpage: false,
+    resolve_relations: ["article.categories"],
+    // resolve_relations: ["article.link"],
   })
   articles.value = data.stories
   </script>
