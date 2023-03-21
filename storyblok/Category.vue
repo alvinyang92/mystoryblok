@@ -1,6 +1,6 @@
 <template>
   <div v-if=blok.link target="_blank" class="py-24">
-    <NuxtLink :to="'/' + blok.link.cached_url">
+    <NuxtLink :to="'/' +  blok.link.cached_url">
     <!-- <NuxtLink :to="'/' + blok.link"> -->
       <h2 class="text-6xl text-[#50b0ae] font-bold text-center mb-12">{{ blok.name }}</h2>
     </NuxtLink>
