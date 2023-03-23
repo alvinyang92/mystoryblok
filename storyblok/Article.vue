@@ -1,6 +1,6 @@
 <template>
   <div v-editable="blok" >
-  <!-- <pre>{{story}}</pre>  -->
+   <!-- <pre>{{ props.raw.content.categories[0].uuid }}</pre>  -->
     <nuxt-img v-if="blok.image?.filename" :src="blok.image.filename + '/m/1600x0'" :alt="blok.image.alt" class="w-full h-[360px] lg:h-[450px] object-cover" />
     <div class="container mx-auto mb-12">
       <h1 class="text-6xl text-[#50b0ae] font-bold mt-12 mb-4">{{ blok.title }}</h1>
@@ -10,8 +10,6 @@
       </h2>
       <div class="flex space-x-2" v-if="blok.categories">
         <h2  v-for="category in blok.categories" 
-        :key="category.uuid"
-        :slug="category.full_slug"
         class="text-2xl text-[#ff6e07] font-bold mb-4 ">
           {{ category.name }}
         </h2>
@@ -36,7 +34,7 @@
 </template>
    
 <script setup>
-const props = defineProps({ blok: Object,  })
+const props = defineProps({ blok: Object, raw: Object  })
 const resolvedRichText = computed(() => renderRichText(props.blok.content))
 
 const articles = ref(null)
@@ -46,15 +44,15 @@ const { data } = await storyblokApi.get('cdn/stories', {
   version: 'published',
   starts_with: 'blog',
   is_startpage: false,
-// excluding_ids: ["id.id"],
+excluding_ids: ["id.id"],
   resolve_relations: ["article.categories"],
   filter_query: {
     title: {
       not_in: props.blok.title
     },
-    // categories: {
-    //   all_in_array: category.uuid,
-    //     }
+       categories: {
+         any_in_array: props.raw.content.categories[0].uuid
+           }
   }
 })
 articles.value = data.stories

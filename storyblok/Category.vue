@@ -1,16 +1,21 @@
 <template>
+  <!-- <pre></pre> -->
   <div v-if=blok.link target="_blank" class="flex">
     <NuxtLink :to="'/' +  blok.link.cached_url">
     <!-- <NuxtLink :to="'/' + blok.link"> -->
       <h2 class="text-6xl text-[#50b0ae] font-bold text-center mb-12">{{ blok.name }}</h2>
     </NuxtLink>
   </div>
+  <template>
+<!-- <pre>{{story}}</pre> 
+  <StoryblokComponent v-if="story" :blok="story.content" :raw="story" />  -->
+</template>
 </template>
  
 
 <script setup>
 defineProps(
-  { blok: Object, 
+  { blok: Object, raw: Object
   }
   )
 const articles = ref(null)

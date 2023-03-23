@@ -1,0 +1,102 @@
+{
+    "name": "New Article 4",
+    "created_at": "2023-03-21T16:20:50.967Z",
+    "published_at": "2023-03-23T09:01:23.964Z",
+    "id": 279630035,
+    "uuid": "a0e642de-5b1a-463d-9f22-92447ffc6129",
+    "content": {
+        "_uid": "cb670976-1438-41cb-956d-c455d408dfca",
+        "data": "2023-03-22 00:00",
+        "image": {
+            "id": 7534461,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "filename": "https://a.storyblok.com/f/207121/2782x1836/227a701b1f/screenshot-2023-03-17-at-1-09-33-am.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "is_external_url": false
+        },
+        "title": "Blog Post fashion 1",
+        "teaser": "Lorem ipsum dol",
+        "content": {
+            "type": "doc",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex eros, fringilla vel vehicula vel, consequat vel arcu. Cras tempor tempus eros, eu ultrices justo condimentum sed. Fusce posuere erat non arcu convallis, sit amet condimentum neque vestibulum. Vivamus commodo purus lorem, eget euismod sem pulvinar sit amet. Nullam at hendrerit erat. Proin volutpat nibh non tellus malesuada, gravida cursus diam iaculis. Maecenas at sapien in purus ornare rhoncus. Vivamus varius feugiat ex, eget posuere ipsum rutrum a.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "text": "In et odio imperdiet, dictum purus a, tincidunt nisl. Phasellus bibendum eu odio sit amet gravida. Donec at ligula ac nibh tincidunt imperdiet id id velit. Aenean auctor placerat consectetur. Ut nec accumsan lacus. Integer pulvinar nunc nec mi aliquam auctor. Sed venenatis neque ut elit sodales rutrum. Vestibulum a massa maximus, mattis urna et, consequat ex. Cras pellentesque dictum cursus. Nunc ut augue justo. Quisque laoreet, dolor eget tempor fringilla, nisi sapien posuere nibh, vel fermentum arcu nulla ac libero. In vel nulla dapibus, fringilla sapien id, luctus mi.",
+                            "type": "text"
+                        }
+                    ]
+                }
+            ]
+        },
+        "component": "article",
+        "categories": [
+            {
+                "name": "Fashion",
+                "created_at": "2023-03-21T01:33:20.286Z",
+                "published_at": "2023-03-21T23:39:01.989Z",
+                "id": 279299294,
+                "uuid": "e54a6ffe-ee0c-4fcb-9164-d7fb056ad555",
+                "content": {
+                    "_uid": "5ccb4b2e-de54-4bf2-a9c6-9bddea0c16bd",
+                    "link": {
+                        "id": "974dffc5-d77a-4aa5-b8a8-f4a61cfcdd76",
+                        "url": "",
+                        "linktype": "story",
+                        "fieldtype": "multilink",
+                        "cached_url": "fashion"
+                    },
+                    "name": "Fashion",
+                    "component": "Category"
+                },
+                "slug": "fashion",
+                "full_slug": "categories/fashion",
+                "sort_by_date": null,
+                "position": -10,
+                "tag_list": [],
+                "is_startpage": false,
+                "parent_id": 278274643,
+                "meta_data": null,
+                "group_id": "00854bfc-b02e-49ba-a124-e81b7fdf5994",
+                "first_published_at": "2023-03-21T01:33:48.611Z",
+                "release_id": null,
+                "lang": "default",
+                "path": null,
+                "alternates": [],
+                "default_full_slug": null,
+                "translated_slugs": null,
+                "_stopResolving": true
+            }
+        ]
+    },
+    "slug": "new-article-4",
+    "full_slug": "blog/new-article-4",
+    "sort_by_date": null,
+    "position": 0,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 277130529,
+    "meta_data": null,
+    "group_id": "c62786e6-9696-401e-a749-9716fd6fa6db",
+    "first_published_at": "2023-03-16T17:35:57.913Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+}
