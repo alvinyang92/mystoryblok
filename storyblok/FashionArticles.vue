@@ -18,8 +18,8 @@
   const articles = ref(null)
   const storyblokApi = useStoryblokApi()
   const { data } = await storyblokApi.get('cdn/stories', {
-    // version: 'draft',
-    starts_with: 'blog/',
+    version: 'published',
+    starts_with: 'blog',
     // is_startpage: false,
     ['filter_query[categories][all_in_array]']:'e54a6ffe-ee0c-4fcb-9164-d7fb056ad555',
     resolve_relations: ["article.categories"],

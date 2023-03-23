@@ -12,6 +12,9 @@
             <li>
               <NuxtLink to="/about" class="hover:text-[#50b0ae]">About</NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/Catalogue" class="hover:text-[#50b0ae]">Catalogue</NuxtLink>
+            </li>
           </ul>
         </nav>
       </div>

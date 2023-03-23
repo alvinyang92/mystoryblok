@@ -4,7 +4,7 @@
     "build": "nuxt build",
     "dev": "nuxi dev --https --ssl-key key.pem --ssl-cert cert.pem",
     "dev-ssl": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate --https --ssl-key key.pem --ssl-cert cert.pem",
     "preview": "nuxt preview",
     "stackblitz": "npm run dev"
   },

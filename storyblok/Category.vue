@@ -16,7 +16,7 @@ defineProps(
 const articles = ref(null)
 const storyblokApi = useStoryblokApi()
 const { data } = await storyblokApi.get('cdn/stories', {
-  version: 'draft',
+  version: 'published',
   resolve_links: "link",
 })
 articles.value = data.stories
