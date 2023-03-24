@@ -20,6 +20,7 @@
     "nuxt": "^3.2.2"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.12",
     "moment": "^2.29.4",
     "nuxt-moment": "^1.0.5"
   }
