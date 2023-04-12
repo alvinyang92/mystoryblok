@@ -35,7 +35,7 @@ const storyblokApi = useStoryblokApi()
 
 const { data } = await storyblokApi.get('cdn/stories', {
   version: 'published',
-  starts_with: 'blog',
+  starts_with: 'products',
   is_startpage: false,
   // excluding_ids: ["id.id"],
   resolve_relations: ["article.categories"],

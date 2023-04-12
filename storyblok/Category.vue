@@ -1,7 +1,7 @@
 <template>
   <!-- <pre></pre> -->
-  <div v-if=blok.link target="_blank" class="flex">
-    <NuxtLink :to="'/' +  blok.link.cached_url">
+  <div  class="flex">
+    <NuxtLink class="router-link-active router-link-exact-active" :to="'/' +  blok.link.cached_url">
     <!-- <NuxtLink :to="'/' + blok.link"> -->
       <h2 class="text-6xl text-[#50b0ae] font-bold text-center mb-12">{{ blok.name }}</h2>
     </NuxtLink>
@@ -15,13 +15,14 @@
 
 <script setup>
 defineProps(
-  { blok: Object, raw: Object
+  { blok: Object, 
   }
   )
 const articles = ref(null)
 const storyblokApi = useStoryblokApi()
 const { data } = await storyblokApi.get('cdn/stories', {
   version: 'published',
+  is_startpage: false,
   resolve_links: "link",
 })
 articles.value = data.stories

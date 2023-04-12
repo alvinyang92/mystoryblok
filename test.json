@@ -18,7 +18,7 @@
             "fieldtype": "asset",
             "is_external_url": false
         },
-        "title": "Blog Post fashion 1",
+        "title": "products Post fashion 1",
         "teaser": "Lorem ipsum dol",
         "content": {
             "type": "doc",
@@ -84,7 +84,7 @@
         ]
     },
     "slug": "new-article-4",
-    "full_slug": "blog/new-article-4",
+    "full_slug": "products/new-article-4",
     "sort_by_date": null,
     "position": 0,
     "tag_list": [],
